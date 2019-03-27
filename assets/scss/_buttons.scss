@@ -1,0 +1,5 @@
+@import "@material/button/mdc-button";
+.gray-button {
+  @include mdc-button-ink-color(#757575);
+  @include mdc-states(#757575);
+}
