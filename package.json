@@ -23,6 +23,8 @@
     "webpack-dev-server": "^2.11.5"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.2.7",
+    "babel-preset-env": "^1.7.0",
     "material-components-web": "^1.0.1"
   },
   "engines": {

@@ -3,3 +3,14 @@
   @include mdc-button-ink-color(#757575);
   @include mdc-states(#757575);
 }
+.mdc-button-shaped{
+  border-radius: 18px;
+  &.mdc-button--dense{
+    border-radius: 16px;
+  }
+}
+.mdc-button{
+  &--ui-width-200{
+    width: 200px;
+  }
+}
