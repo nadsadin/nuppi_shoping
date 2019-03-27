@@ -1,6 +1,5 @@
 import * as mdc from 'material-components-web';
 mdc.autoInit();
-
 import Glide from '@glidejs/glide';
 new Glide('.glide', {
   type: 'carousel',

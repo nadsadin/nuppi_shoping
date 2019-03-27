@@ -1,0 +1,12 @@
+.mdc-card{
+  &-content{
+    padding: 16px;
+  }
+}
+.product-card{
+  margin-bottom: 48px;
+  &-muted{
+    color: rgba(0,0,0,.6);
+    margin: 10px 0;
+  }
+}

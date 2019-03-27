@@ -6,8 +6,8 @@
     position: relative;
   }
   &-actions{
-    background-color: $mdc-theme-surface;
-    color: $mdc-theme-on-surface;
+    background-color: $mdc-theme-surface2;
+    color: $mdc-theme-on-surface2;
   }
   &-rating{
     font-size: 29px;
@@ -25,7 +25,4 @@
       width: 11px!important;
     }
   }
-}
-.button-wrap{
-  margin: 10px 0;
 }

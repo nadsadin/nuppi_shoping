@@ -9,6 +9,14 @@
     &--muted{
       color: $mdc-theme-on-background-muted;
     }
-
+    &--accent{
+      color: $mdc-theme-secondary;
+    }
+  }
+  &--headline5{
+    margin: 10px 0;
+  }
+  &--headline6{
+    margin: 18px 0;
   }
 }
