@@ -2,9 +2,12 @@
   &-content{
     padding: 16px;
   }
+  &--fixed{
+    position: fixed;
+  }
 }
 .product-card{
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   &-muted{
     color: rgba(0,0,0,.6);
     margin: 10px 0;

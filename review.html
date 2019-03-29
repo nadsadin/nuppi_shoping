@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/bundle.css">
 </head>
 <body class="mdc-typography">
+
 <aside class="mdc-drawer mdc-drawer--modal">
     <div class="mdc-drawer__content">
         <nav class="mdc-list">
@@ -46,7 +47,6 @@
         <div class="mdc-layout-grid">
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell">
-
                     <div class="mdc-card product-card">
                         <div class="mdc-card-content">
                             <div class="mdc-layout-grid__inner">
@@ -60,56 +60,98 @@
                                 </div>
                                 <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
                                     <a href="#" class="mdc-button gray-button">О продукте</a>
+                                    <a href="#" class="mdc-button gray-button">Чат</a>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="mdc-typography-text--center">
                         <div class="mdc-typography--section">
-                            <h6 class="mdc-typography--headline6">Написать в чат</h6>
-                            <div class="mdc-typography--body2 mdc-typography-text--muted">В чате с производителем вы можете задавать вопросы о данном товаре или услуге. Пожалуйста представьтесь или <a href="#" class="mdc-typography-text--accent">войдите</a> в свой аккаунт.</div>
+                            <h6 class="mdc-typography--headline6">Написать отзыв</h6>
+                            <div class="mdc-typography--body2 mdc-typography-text--muted">Вы можете оценить продукт или услугу только на основании подтверждающего документа (чек, купон, инвойс).</div>
+                        </div>
+                        <div class="mdc-typography--section">
+                            <div class="mdc-typography--body2">Общая оценка</div>
+                        </div>
+                        <div class="mdc-typography--section">
+                            <div class="ui-stars form-stars ui-stars--secondary large">
+                                <input type="radio" class="input-hidden" name="rating" value="1" id="rating_star_1">
+                                <label class="ui-star" for="rating_star_1">
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                </label>
+                                <input type="radio" class="input-hidden" name="rating" value="2" id="rating_star_2">
+                                <label class="ui-star" for="rating_star_2">
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                </label>
+                                <input type="radio" class="input-hidden" name="rating" value="3" id="rating_star_3">
+                                <label class="ui-star" for="rating_star_3">
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                </label>
+                                <input type="radio" class="input-hidden" name="rating" value="4" id="rating_star_4">
+                                <label class="ui-star" for="rating_star_4">
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                </label>
+                                <input type="radio" class="input-hidden" name="rating" value="5" id="rating_star_5">
+                                <label class="ui-star" for="rating_star_5">
+                                    <i class="material-icons">star</i>
+                                    <i class="material-icons">star</i>
+                                </label>
+                            </div>
                         </div>
                         <div class="mdc-typography--section">
                             <div class="field-container">
-                                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--outlined-w100" data-mdc-auto-init="MDCTextField">
-                                    <input type="text" id="name" class="mdc-text-field__input">
+                                <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--outlined-w100" data-mdc-auto-init="MDCTextField">
+                                    <textarea id="textarea" class="mdc-text-field__input" rows="4" cols="40"></textarea>
                                     <div class="mdc-notched-outline">
                                         <div class="mdc-notched-outline__leading"></div>
                                         <div class="mdc-notched-outline__notch">
-                                            <label for="name" class="mdc-floating-label">Ваше имя</label>
+                                            <label for="textarea" class="mdc-floating-label">Преимущества</label>
                                         </div>
                                         <div class="mdc-notched-outline__trailing"></div>
                                     </div>
                                 </div>
-                                <div class="mdc-text-field-helper-line">
-                                    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg">Ваше имя на русском или английском языке</p>
-                                </div>
                             </div>
                             <div class="field-container">
-                                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--outlined-w100" data-mdc-auto-init="MDCTextField">
-                                    <input type="text" id="phone" class="mdc-text-field__input">
+                                <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--outlined-w100" data-mdc-auto-init="MDCTextField">
+                                    <textarea id="textarea-2" class="mdc-text-field__input" rows="4" cols="40"></textarea>
                                     <div class="mdc-notched-outline">
                                         <div class="mdc-notched-outline__leading"></div>
                                         <div class="mdc-notched-outline__notch">
-                                            <label for="phone" class="mdc-floating-label">Номер телефона</label>
+                                            <label for="textarea-2" class="mdc-floating-label">Недостатки</label>
                                         </div>
                                         <div class="mdc-notched-outline__trailing"></div>
                                     </div>
                                 </div>
-                                <div class="mdc-text-field-helper-line">
-                                    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" >Введите номер мобильного телефона</p>
+                            </div>
+                            <div class="field-container">
+                                <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--outlined-w100" data-mdc-auto-init="MDCTextField">
+                                    <textarea id="textarea-3" class="mdc-text-field__input" rows="4" cols="40"></textarea>
+                                    <div class="mdc-notched-outline">
+                                        <div class="mdc-notched-outline__leading"></div>
+                                        <div class="mdc-notched-outline__notch">
+                                            <label for="textarea-3" class="mdc-floating-label">Комментарий</label>
+                                        </div>
+                                        <div class="mdc-notched-outline__trailing"></div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="field-container">
+                                <label for="file">
+                                    <input type="file" id="file" class="input-hidden">
+                                    <div class="mdc-button gray-button mdc-button-shaped mdc-button--ui-width-200"><span class="material-icons">attach_file</span>прикрепить файл</div>
+                                </label>
                             </div>
                         </div>
                         <div class="mdc-typography--section">
-                            <div class="button-wrap">
-                                <button class="mdc-button mdc-button--raised mdc-button-shaped mdc-button--ui-width-200">
-                                    НАЧАТЬ ЧАТ
-                                </button>
-                            </div>
+                            <button class="mdc-button mdc-button--raised mdc-button-shaped mdc-button--ui-width-200">
+                                ОТПРАВИТЬ
+                            </button>
                         </div>
-                        <div class="mdc-typography--body2 mdc-typography-text--muted mdc-typography-text--center">Начиная чат вы подтверждаете согласие с Условиями использования сервиса и Политикой персональных данных</div>
                     </div>
 
                 </div>
@@ -117,6 +159,8 @@
         </div>
     </div>
 </div>
+
+
 
 <script src="assets/js/bundle.js" async></script>
 </body>
