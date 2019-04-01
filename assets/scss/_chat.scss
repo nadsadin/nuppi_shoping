@@ -80,7 +80,7 @@
     color: $mdc-theme-on-surface2;
     padding: 16px;
     border-radius: 16px 16px 16px 0;
-    margin: 16px 0;
+    margin: 16px 0 8px;
     display: flex;
     &.right{
       align-self: flex-end;
@@ -95,6 +95,9 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+  .mdc-chip.right{
+    float: right;
   }
 }
 .mdc-chip--green{
